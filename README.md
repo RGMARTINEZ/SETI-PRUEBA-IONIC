@@ -38,9 +38,69 @@ Este proyecto es una aplicación móvil desarrollada con **Ionic + Angular**, cr
 - Xcode (solo para macOS, para compilar en iOS)
 - Firebase Console
 
+
+### Requisitos Previos
+
+- Node.js (v16 o superior) (Versión Utilizada NodeJs V22.17.1)
+- Ionic CLI
+- Android Studio (para compilar en Android)
+- Xcode (solo para macOS, para compilar en iOS)
+- Firebase Console
+
 ### Clonar el repositorio
 
 ```bash
 git clone https://github.com/RGMARTINEZ/SETI-PRUEBA-IONIC.git
 cd SETI-PRUEBA-IONIC
 npm install
+
+
+### Ejecutar en navegador
+ionic serve
+
+### Agregar Plataformas
+npx cap add android
+npx cap add ios
+
+### Compilar y Sincronizar
+
+onic build
+npx cap sync android 
+npx cap sync ios 
+
+### Abrir en Android Studio
+npx cap open android
+
+### Abrir en Xcode (macOS)
+npx cap open ios
+
+
+### Generar APK (Android) En Android Studio:
+
+Menú Build > Build Bundle(s) / APK(s) > Build APK(s)
+
+El APK estará en android/app/build/outputs/apk/.
+
+Para versión release (firmada):
+
+Menú Build > Generate Signed Bundle / APK
+
+Sigue el asistente para tu keystore.
+
+
+
+### Generar IPA (iOS)
+
+En Xcode:
+
+Product > Archive
+
+En Organizer, usa Distribute App para exportar el IPA o subir a App Store Connect.
+
+NOta: Hay que tener una cuenta la cual el costo es de $ 99 dolares. Para poder generar la IPA y exportarla.
+
+
+
+
+
+
